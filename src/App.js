@@ -3,7 +3,6 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import TodoForm from './components/TodoForm/TodoForm';
 import TodoList from './components/TodoList/TodoList';
-import Card from './components/Card/Card'
 import DoneList from './components/DoneList/DoneList'
 
 class App extends Component {

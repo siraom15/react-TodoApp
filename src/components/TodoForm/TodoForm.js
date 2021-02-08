@@ -33,16 +33,16 @@ class TodoForm extends Component {
                         <h5>Add Todo</h5>
                         <hr/>
                         <form onSubmit={(e)=>this.handlerSubmit(e)}>
-                            <div class="form-group">
+                            <div className="form-group">
                                 <label >Todo title</label>
-                                <input type="text" class="form-control"  placeholder="Enter Todo Name"ref={(input)=> this.title = input} required={true} />
+                                <input type="text" className="form-control"  placeholder="Enter Todo Name"ref={(input)=> this.title = input} required={true} />
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                                 <label >Descibe</label>
-                                <textarea type="text" class="form-control" placeholder="Describe" ref={(input)=> this.describe = input} required={true} />
+                                <textarea type="text" className="form-control" placeholder="Describe" ref={(input)=> this.describe = input} required={true} />
                             </div>
-                            <div class="form-group mt-2">
-                                <button type="submit" class="btn" style={style}>Add Todo</button>
+                            <div className="form-group mt-2">
+                                <button type="submit" className="btn" style={style}>Add Todo</button>
                             </div>
                         </form>
                     </div>
