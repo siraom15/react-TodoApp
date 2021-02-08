@@ -6,7 +6,7 @@ class TodoList extends Component {
 
     getTodo() {
         const todoList = this.props.todos.filter(todo => todo.success == false)
-        return (this.props.todos.length > 0) ? todoList.map(todo => (
+        return (todoList.length > 0) ? todoList.map(todo => (
             <TodoCard key={todo.id} {...todo} />
         )) : <Card content="No Data" />
     }
