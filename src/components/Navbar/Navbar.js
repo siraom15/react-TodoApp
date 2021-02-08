@@ -12,8 +12,8 @@ class Navbar extends Component {
                                 <a className="nav-link active" aria-current="page" href="/">Home</a>
                             </li>
                         </ul>
-
                     </div>
+                    <a href="https://github.com/siraom15/todoApp-react" className="nav-link text-white">GitHub</a>
                 </div>
             </nav>
         )
