@@ -40,10 +40,11 @@ class TodoCard extends Component {
     }
     render() {
         return (
-            <div class="card">
+            <div class="card shadow-sm">
                 <div class="card-body">
-                    <h5>Todo Name : {this.props.title}</h5>
-                    <p>Describe : {this.props.describe}</p>
+                    <h5><span class="badge" style={this.style2}>title</span> {this.props.title}</h5>
+                    <hr/>
+                    <p><span class="badge" style={this.style2}>Describe</span> {this.props.describe}</p>
                     <div className="row">
                         <div className="col">
                             {this.doneBtn()}

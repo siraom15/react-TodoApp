@@ -28,7 +28,7 @@ class TodoForm extends Component {
         }
         return (
             <div className="container mt-2 p-5">
-                <div className="card">
+                <div className="card shadow-sm">
                     <div className="card-body">
                         <h5>Add Todo</h5>
                         <hr/>
