@@ -4,6 +4,8 @@ export default (state = [], action) => {
             return state.concat([action.data])
         case 'REMOVE_TODO':
             return state
+        case 'DONE_TODO':
+            return state
         default:
             return state
 

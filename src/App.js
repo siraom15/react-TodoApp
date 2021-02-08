@@ -3,7 +3,8 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import TodoForm from './components/TodoForm/TodoForm';
 import TodoList from './components/TodoList/TodoList';
-
+import Card from './components/Card/Card'
+import DoneList from './components/DoneList/DoneList'
 
 class App extends Component {
   render() {
@@ -13,6 +14,9 @@ class App extends Component {
         <div className="row">
           <div className="col">
             <TodoList />
+          </div>
+          <div className="col">
+            <DoneList />
           </div>
           <div className="col">
             <TodoForm />

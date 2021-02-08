@@ -2,10 +2,10 @@ import { Component } from "react";
 import TodoCard from "../TodoCard/TodoCard";
 import { connect } from 'react-redux'
 import Card from '../Card/Card'
-class TodoList extends Component {
+class DoneList extends Component {
 
-    getTodo() {
-        const todoList = this.props.todos.filter(todo => todo.success == false)
+    getDone() {
+        const todoList = this.props.todos.filter(todo => todo.success == true)
         return (this.props.todos.length > 0) ? todoList.map(todo => (
             <TodoCard key={todo.id} {...todo} />
         )) : <Card content="No Data" />
@@ -15,8 +15,8 @@ class TodoList extends Component {
         return (
             <div className="row mt-2 p-5">
                 <div className="col">
-                    <Card content="Todo List" />
-                    {this.getTodo()}
+                    <Card content="Done List" />
+                    {this.getDone()}
                 </div>
             </div>
         )
@@ -28,4 +28,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps)(TodoList);
+export default connect(mapStateToProps)(DoneList);

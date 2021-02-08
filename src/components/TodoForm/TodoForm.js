@@ -1,8 +1,5 @@
 import { Component } from "react";
 import { connect } from 'react-redux'
-// import { useFirebase } from 'react-redux-firebase'
-
-// const firebase = useFirebase()
 
 class TodoForm extends Component {
     handlerSubmit(e){
@@ -12,7 +9,8 @@ class TodoForm extends Component {
         const data = {
             id : new Date(),
             title,
-            describe
+            describe,
+            success : false
         }
         this.props.dispatch({
             type : 'ADD_TODO',

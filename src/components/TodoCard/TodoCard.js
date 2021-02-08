@@ -14,7 +14,7 @@ class TodoCard extends Component {
                     <p>Describe : {this.props.describe}</p>
                     <div className="row">
                         <div className="col">
-                            <button type="button" class="btn btn-blog bg-peach" style={style}>Edit</button>
+                            <button type="button" class="btn btn-blog bg-peach" style={style}>Done</button>
                         </div>
                         <div className="col">
                             <button type="button" class="btn bg-pink">Delete</button>
