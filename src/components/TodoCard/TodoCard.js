@@ -40,7 +40,7 @@ class TodoCard extends Component {
     }
     render() {
         return (
-            <div className="card shadow-sm">
+            <div className="card shadow-sm mt-1">
                 <div className="card-body">
                     <h5><span className="badge" style={this.style2}>title</span> {this.props.title}</h5>
                     <hr/>
