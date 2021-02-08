@@ -5,10 +5,10 @@ import Card from '../Card/Card'
 class TodoList extends Component {
 
     getTodo() {
-        const todoList = this.props.todos.filter(todo => todo.success == false)
+        const todoList = this.props.todos.filter(todo => todo.success === false)
         return (todoList.length > 0) ? todoList.map(todo => (
             <TodoCard key={todo.id} {...todo} />
-        )) : <Card content="No Data" />
+        )) : <Card content="No Todo List" />
     }
 
     render() {

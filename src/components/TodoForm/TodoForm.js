@@ -6,8 +6,9 @@ class TodoForm extends Component {
         e.preventDefault(); 
         const title = this.title.value;
         const describe = this.describe.value;
+        
         const data = {
-            id : new Date(),
+            id : Date.now(),
             title,
             describe,
             success : false
