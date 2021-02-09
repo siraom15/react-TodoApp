@@ -13,7 +13,7 @@ class TodoList extends Component {
 
     render() {
         return (
-            <div className="row mt-2 p-5">
+            <div className="row mt-5">
                 <div className="col">
                     <Card content="Todo List" />
                     {this.getTodo()}

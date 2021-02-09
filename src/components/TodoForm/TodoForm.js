@@ -27,7 +27,7 @@ class TodoForm extends Component {
             color : "#9b5151"
         }
         return (
-            <div className="container-fluid mt-2 p-5">
+            <div className="container-fluid mt-5">
                 <div className="card shadow-sm">
                     <div className="card-body">
                         <h5>Add Todo</h5>
